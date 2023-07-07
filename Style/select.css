@@ -1,0 +1,30 @@
+/* Intro settings */
+
+/* Default height for small devices */
+#intro-example {
+    height: 400px;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #intro-example {
+        height: 600px;
+    }
+}
+
+
+.banner {
+    margin-bottom: 10%;
+}
+
+.coverImage {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 370px;
+}
+
+body {
+    background-color: #151515;
+}
