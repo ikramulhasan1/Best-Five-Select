@@ -1,42 +1,17 @@
-/* Intro settings */
-
-/* Default height for small devices */
-#intro-example {
-    height: 400px;
-}
-
-/* Height for devices larger than 992px */
-@media (min-width: 992px) {
-    #intro-example {
-        height: 600px;
-    }
-}
-
-
-.banner {
-    margin-bottom: 10%;
-}
-
-.coverImage {
-    display: flex;
+/* #banerImg {
     position: absolute;
-    bottom: 0;
-    right: 40px;
-    width: 370px;
+    left: 100px;
+    top: 150px;
+} */
+
+
+.bg-color {
+    background-color: #111827;
+    background-image: url(https://cdn.quotesgram.com/img/98/61/2073830966-football-119047.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.coverImage2 {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 40px;
-    width: 290px;
-}
-
-body {
-    background-color: #151515;
-}
-
-main {
-    margin: 0px 6%;
-}
+/* body {
+    margin: 0px;
+} */
