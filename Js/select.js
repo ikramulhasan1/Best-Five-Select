@@ -28,13 +28,16 @@ function createNewList(playerName) {
 
 function multiflyResult() {
     const perPlayerInput = document.getElementById('perPlayerInput').value;
+    if (isNaN(perPlayerInput) == true) {
 
-    const playerExpenses = document.getElementById('playerExpenses');
-    playerExpenses.innerText;
+        console.log(alert('Please input the Valid number'));
+    } else {
+        const playerExpenses = document.getElementById('playerExpenses');
+        playerExpenses.innerText;
 
-    multifly = playerNames.length * perPlayerInput;
-    playerExpenses.innerText = multifly
-
+        multifly = playerNames.length * perPlayerInput;
+        playerExpenses.innerText = multifly
+    }
     return multifly;
 }
 
@@ -44,9 +47,14 @@ function totalSum() {
 
     const coach = document.getElementById('coach').value;
     const coachString = parseInt(coach)
+    if (isNaN(manager) === true || isNaN(coach) === true) {
+        console.log(alert('Please input the Valid number'));
+    } else {
+        const totalSum = managerString + coachString;
+        return totalSum;
+    }
 
-    const totalSum = managerString + coachString;
-    return totalSum;
+
 }
 
 // Per Player Calculate Total

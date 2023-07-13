@@ -1,17 +1,27 @@
-/* #banerImg {
-    position: absolute;
-    left: 100px;
-    top: 150px;
-} */
+ /* .banerImg {
+     position: absolute;
+     background-image: url(4.png);
+     left: 100px;
+     top: 150px;
+ } */
 
 
-/* .banerImg {
+ /* .banerImg {
     background-color: #111827;
     background-image: url(./);
     background-repeat: no-repeat;
     background-size: cover;
 } */
 
-/* body {
-    margin: 0px;
-} */
+ .banerImgTitle {
+     font-family: 'Oleo Script', cursive;
+ }
+
+
+ .banerImgTitle {
+     font-size: 62px;
+     color: rgb(255, 51, 0);
+
+
+
+ }
