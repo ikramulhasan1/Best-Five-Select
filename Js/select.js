@@ -1,159 +1,171 @@
+var playerNames = [];
 
-// Achraf Hakimi
-document.getElementById('player-Btn-1').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-1');
-    const playerNameString = playerName.innerText;
+
+
+
+// Player name List create
+function createNewList(playerName) {
+    playerName = document.getElementById(playerName).innerText;
 
     const orderList = document.getElementById('order-List');
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
+    let li = document.createElement('li');
+    li.innerText = playerName;
 
     orderList.appendChild(li);
+
+    if (li !== '') {
+        playerNames.push(li)
+        // console.log(playerNames);
+    }
+
+
+    // document.getElementById('player-Btn-1').disabled = true;
+
+
+    return playerName;
+
+}
+
+
+function multiflyResult() {
+    const perPlayerInput = document.getElementById('perPlayerInput').value;
+
+    const playerExpenses = document.getElementById('playerExpenses');
+    playerExpenses.innerText;
+
+    multifly = playerNames.length * perPlayerInput;
+    playerExpenses.innerText = multifly
+
+    return multifly;
+}
+
+function totalSum() {
+
+    const manager = document.getElementById('manager').value;
+    const managerString = parseInt(manager);
+
+    const coach = document.getElementById('coach').value;
+    const coachString = parseInt(coach)
+
+    const totalSum = managerString + coachString;
+    return totalSum;
+
+}
+
+// Per Player Calculate Total
+document.getElementById('perPlayerBtn').addEventListener('click', function perPlayer(multifly) {
+
+    multiflyResult()
+})
+
+// Calculate Total Money
+document.getElementById('calculateTotal').addEventListener('click', function () {
+    const total = document.getElementById('total');
+    const add = multiflyResult() + totalSum();
+    const addString = parseInt(add)
+
+    total.innerText = addString
+
+})
+
+
+// Achraf Hakimi
+document.getElementById('player-Btn-1').addEventListener('click', function () {
+    const playerName = createNewList('player-Name-1');
+
+    document.getElementById('player-Btn-1').disabled = true;
+
+
 })
 
 // Cristiano Ronaldo
 document.getElementById('player-Btn-2').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-2')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-2')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-2').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Jack Grealish
 document.getElementById('player-Btn-3').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-3')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-3')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-3').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Lionel Messi
 document.getElementById('player-Btn-4').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-4')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-4')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-4').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Luis Suarez
 document.getElementById('player-Btn-5').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-5')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-5')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-5').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
 
-    orderList.appendChild(li);
 })
 
 // Luka Modric
 document.getElementById('player-Btn-6').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-6')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-6')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-6').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Mbappe
 document.getElementById('player-Btn-7').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-7')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-7')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-7').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Mesut Özil
 document.getElementById('player-Btn-8').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-8')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-8')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-8').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Mohamed salah
 document.getElementById('player-Btn-9').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-9')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-9')
 
-    const orderList = document.getElementById('order-List');
-
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
+    document.getElementById('player-Btn-9').disabled = true;
 
 })
 
 // NEYMAR JR
 document.getElementById('player-Btn-10').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-10')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-10')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-10').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Paulo Dybala
 document.getElementById('player-Btn-11').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-11')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-11')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-11').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Pedri
 document.getElementById('player-Btn-12').addEventListener('click', function () {
-    const playerName = document.getElementById('player-Name-12')
-    const playerNameString = playerName.innerText;
+    const playerName = createNewList('player-Name-12')
 
-    const orderList = document.getElementById('order-List');
+    document.getElementById('player-Btn-12').disabled = true;
 
-    const li = document.createElement('li');
-    li.innerText = playerNameString;
-
-    orderList.appendChild(li);
 })
 
 // Player Calculation
