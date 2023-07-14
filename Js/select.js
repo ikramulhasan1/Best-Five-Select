@@ -47,14 +47,15 @@ function totalSum() {
 
     const coach = document.getElementById('coach').value;
     const coachString = parseInt(coach)
-    if (isNaN(manager) === true || isNaN(coach) === true) {
-        console.log(alert('Please input the Valid number'));
+
+    // Error Detection
+    if (isNaN(manager) === true || isNaN(coach) === true || manager.trim() === '' || coach.trim() === '') {
+        alert('Please input the Valid number');
+        return 0;
     } else {
         const totalSum = managerString + coachString;
         return totalSum;
     }
-
-
 }
 
 // Per Player Calculate Total
